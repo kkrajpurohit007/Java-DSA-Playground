@@ -7,12 +7,12 @@ public class InsertionSort implements ISorter {
     @Override
     public void sort(int[] arr) {
         if(arr == null || arr.length == 0){
-            throw new IllegalArgumentException("Array is null or empty");
+            throw new IllegalArgumentException("Array is null or empty.");
         }
         if (arr.length == 1){
             return;
         }
-        for(int i = 1; i < arr.length - 1; i++){
+        for(int i = 1; i < arr.length; i++){
             int key = arr[i];
             int j = i - 1;
             while (j >= 0 && arr[j] > key){

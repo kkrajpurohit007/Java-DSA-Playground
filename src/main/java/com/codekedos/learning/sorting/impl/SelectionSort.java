@@ -6,7 +6,7 @@ public class SelectionSort implements ISorter {
     @Override
     public void sort(int[] arr) {
         if(arr == null || arr.length == 0){
-            throw new IllegalArgumentException("Array is null or empty");
+            throw new IllegalArgumentException("Array is null or empty.");
         }
         if (arr.length == 1){
             return;
